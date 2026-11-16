@@ -1,0 +1,51 @@
+/* Perguntas frequentes */
+.faq {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-top: 1px solid var(--border);
+}
+.faq-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 24px 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.faq-q .chev {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+.faq-item.open .faq-q .chev {
+  transform: rotate(135deg);
+}
+/* Resposta: fica fechada (altura 0) e abre quando o
+   componente Faq coloca a classe "open" no item da pergunta */
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.faq-item.open .faq-a {
+  max-height: 400px;
+}
+.faq-a p {
+  margin-bottom: 24px;
+  color: var(--muted);
+}

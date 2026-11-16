@@ -1,0 +1,23 @@
+/* Depoimentos */
+.quote .chev {
+  width: 11px;
+  height: 11px;
+  margin: 0 0 18px 2px;
+  color: var(--accent);
+}
+.quote .quote-text {
+  margin-bottom: 22px;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #e6ebef;
+}
+.quote .quote-author strong {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.quote .quote-author span {
+  font-size: 0.8125rem;
+  color: var(--muted-2);
+}

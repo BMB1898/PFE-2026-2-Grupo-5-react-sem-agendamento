@@ -1,0 +1,14 @@
+/* Mosaico de 4 fotos */
+.photo-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.photo-mosaic img {
+  width: 100%;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}

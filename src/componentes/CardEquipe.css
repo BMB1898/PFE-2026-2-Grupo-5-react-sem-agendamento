@@ -1,0 +1,40 @@
+/* Professores e equipe (figure + figcaption) */
+.team-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden; /* corta a foto no formato do card */
+  transition: transform 0.25s ease;
+}
+.team-card:hover {
+  transform: translateY(-4px);
+}
+.team-card .photo {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.team-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.team-card:hover img {
+  transform: scale(1.04);
+}
+.team-card .info {
+  padding: 22px 24px 24px;
+}
+.team-card h3 {
+  margin-bottom: 4px;
+  font-size: 1.1875rem;
+}
+.team-card .role {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--accent);
+}
+.team-card .exp {
+  font-size: 0.8125rem;
+  color: var(--muted-2);
+}

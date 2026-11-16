@@ -1,0 +1,146 @@
+/* Estilos só da página de Planos */
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: transform 0.25s ease;
+}
+.plan:hover {
+  transform: translateY(-4px);
+}
+.plan.featured {
+  background-color: #061e2c;
+  border-color: var(--accent);
+  box-shadow: 0 30px 60px -30px rgba(0, 180, 245, 0.45);
+}
+.badge {
+  align-self: flex-start;
+  margin-bottom: 22px;
+  padding: 4px 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #d4dbe1;
+}
+.plan.featured .badge {
+  background-color: var(--accent);
+  color: var(--accent-ink);
+}
+.plan h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.plan > p {
+  margin-bottom: 26px;
+  color: var(--muted);
+}
+/* a lista cresce (flex: 1) e empurra o preço para o fim do card */
+.plan ul {
+  flex: 1;
+  margin-bottom: 34px;
+}
+.plan li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 7px 0;
+  color: #e3e9ee;
+}
+.plan li .chev {
+  width: 9px;
+  height: 9px;
+  color: var(--accent);
+}
+.price-box {
+  display: block;
+  padding: 18px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s ease;
+}
+.price-box:hover {
+  border-color: var(--accent);
+}
+.price-box .price-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.price-box strong {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.plans-note {
+  margin-top: 22px;
+  font-size: 0.875rem;
+  color: var(--muted-2);
+}
+
+/* Caixa de chamada para a aula experimental */
+.cta-box {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+  background: linear-gradient(180deg, #0a3b56 0%, #082b40 100%);
+  border: 1px solid rgba(0, 180, 245, 0.25);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.cta-box h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+}
+.cta-box p {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  color: #cfe0ea;
+}
+.cta-box .actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .plans {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+  .plan {
+    padding: 24px;
+  }
+  .cta-box {
+    padding: 44px 22px;
+  }
+  .cta-box .btn {
+    width: 100%;
+  }
+}

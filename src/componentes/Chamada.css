@@ -1,0 +1,37 @@
+/* Chamada final (CTA) */
+.cta {
+  position: relative;
+  padding: 110px 0;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(0, 140, 210, 0.25) 0%, transparent 60%),
+    #06202e;
+  overflow: hidden;
+}
+.cta h2 {
+  margin-bottom: 18px;
+  font-size: clamp(1.875rem, 3.6vw, 2.875rem);
+}
+.cta p {
+  max-width: 560px;
+  margin: 0 auto 34px;
+  color: #c3ccd4;
+}
+.cta .actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+.cta .rocket-big {
+  width: 34px;
+  height: 42px;
+  margin: 0 auto 26px;
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+  .cta .btn {
+    width: 100%;
+  }
+}

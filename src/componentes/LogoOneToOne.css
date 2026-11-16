@@ -1,0 +1,45 @@
+/* Logo "ONE to ONE STUDIO" feita com texto */
+.brand-logo-1to1 {
+  display: inline-flex;
+  flex-direction: column;
+}
+.brand-logo-1to1 .word {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: clamp(2.625rem, 5vw, 3.875rem);
+  font-weight: 700;
+  line-height: 1;
+}
+.brand-logo-1to1 .to {
+  padding: 3px 7px 6px;
+  background-color: var(--accent);
+  color: var(--accent-ink); /* texto escuro sobre o azul: contraste de 7,6:1 */
+  font-family: var(--font-body);
+  font-size: 0.38em;
+  font-weight: 600;
+}
+.brand-logo-1to1 .studio {
+  margin-top: 4px;
+  padding-left: 4px;
+  font-size: 0.6875rem;
+  letter-spacing: 0.6em;
+  color: var(--muted);
+}
+/* versão do header */
+.brand-logo-1to1.nav-1to1 .word {
+  gap: 5px;
+  font-size: 1.875rem;
+}
+.brand-logo-1to1.nav-1to1 .studio {
+  margin-top: 2px;
+  font-size: 0.5rem;
+}
+/* versão do card da Home */
+.brand-logo-1to1.sm {
+  margin-bottom: 18px;
+}
+.brand-logo-1to1.sm .word {
+  font-size: 2.125rem;
+}

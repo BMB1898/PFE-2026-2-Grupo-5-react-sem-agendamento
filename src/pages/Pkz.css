@@ -1,0 +1,17 @@
+/* Estilos só da página do PKZ */
+
+/* Marca "P🚀Z" nos cards de serviço */
+.pkz-mark-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  margin-bottom: 16px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.pkz-mark-sm img {
+  width: 14px;
+  height: 18px;
+}
